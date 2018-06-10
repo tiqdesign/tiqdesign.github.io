@@ -172,7 +172,7 @@ path{
     fill:#FFFFFF;
     stroke-dasharray:1800;
     opacity:10;
-    animation: animate 3s cubic-bezier(0,.73,1,.33);
+    animation: animate 5s cubic-bezier(0,.73,1,.33);
 
 }
 @keyframes animate {
