@@ -27,8 +27,8 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  width: 75%;
 }
 
 .navbar ul {
@@ -64,11 +64,9 @@ body {
 }
 
 .home-container {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(0, 0, 0, 0.57) 100%,
-      rgba(0, 0, 0, 0.57) 100%
-    ),
+      rgba(0, 0, 0, 0.57) 100%),
     url(img/home.jpg) no-repeat right;
   background-size: cover;
   min-height: 100vh;
@@ -172,11 +170,9 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(0, 0, 0, 0.75) 100%,
-      rgba(0, 0, 0, 0.75) 100%
-    ),
+      rgba(0, 0, 0, 0.75) 100%),
     url(img/hire.jpg);
   background-size: cover;
   background-position: center top;
@@ -274,6 +270,17 @@ body {
   animation-name: scroll;
 }
 
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 @keyframes scroll {
   0% {
     opacity: 1;
@@ -287,7 +294,15 @@ body {
 
 /* // Media Queries // */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 790px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
   .skill-bar-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -298,7 +313,7 @@ body {
   }
 }
 
-@media screen and (min-width: 770px) and (max-width: 990px) {
+@media screen and (min-width: 790px) and (max-width: 990px) {
   .skill-bar-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
