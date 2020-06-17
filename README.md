@@ -1,2 +1,0 @@
-# tiqdesign.github.io
-Site
